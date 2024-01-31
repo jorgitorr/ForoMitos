@@ -417,7 +417,7 @@ fun PaginaMusicos(navController: NavController) {
                                 .size(320.dp, 258.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.jimmyhendrix),
-                            textoTextContent = "GRIEGA"
+                            textoTextContent = "JIMMY\nHENDRIX"
                         )
                     }
                     item {
@@ -425,8 +425,8 @@ fun PaginaMusicos(navController: NavController) {
                             modifier = Modifier
                                 .size(320.dp, 258.dp)
                                 .padding(5.dp),
-                            zeusImage = painterResource(id = R.drawable.egipto),
-                            textoTextContent = "EGIPCIA"
+                            zeusImage = painterResource(id = R.drawable.linkin_park),
+                            textoTextContent = "LINKIN\nPARK"
                         )
                     }
                     item {
@@ -434,8 +434,8 @@ fun PaginaMusicos(navController: NavController) {
                             modifier = Modifier
                                 .size(320.dp, 258.dp)
                                 .padding(5.dp),
-                            zeusImage = painterResource(id = R.drawable.japon),
-                            textoTextContent = "JAPONESA"
+                            zeusImage = painterResource(id = R.drawable.michael_jackson),
+                            textoTextContent = "MICHAEL\nJACKSON"
                         )
                     }
                     item {
@@ -443,8 +443,8 @@ fun PaginaMusicos(navController: NavController) {
                             modifier = Modifier
                                 .size(320.dp, 258.dp)
                                 .padding(5.dp),
-                            zeusImage = painterResource(id = R.drawable.japon),
-                            textoTextContent = "JAPONESA"
+                            zeusImage = painterResource(id = R.drawable.freedy_mercury),
+                            textoTextContent = "FREEDY\nMERCURY"
                         )
                     }
                     item {
@@ -452,8 +452,8 @@ fun PaginaMusicos(navController: NavController) {
                             modifier = Modifier
                                 .size(320.dp, 258.dp)
                                 .padding(5.dp),
-                            zeusImage = painterResource(id = R.drawable.nordica),
-                            textoTextContent = "JAPONESA"
+                            zeusImage = painterResource(id = R.drawable.the_beatles),
+                            textoTextContent = "THE\nBEATLES"
                         )
                     }
                 }

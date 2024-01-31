@@ -13,5 +13,3 @@
 .cxx
 local.properties
 
-# Project exclude paths
-/app/build/
