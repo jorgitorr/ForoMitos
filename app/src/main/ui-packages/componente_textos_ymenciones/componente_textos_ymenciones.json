@@ -1,0 +1,191 @@
+{
+  "name": "componente_textos_ymenciones",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oS5GCvArJUXNdvwK6WUqEe",
+    "node": "37:33",
+    "version": "5068633676",
+    "component-id": "236717c2aca0d05ea71e8ca8244f9cb5dc4c4ad0"
+  },
+  "default": "ComponenteTextosYMenciones",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "TextosFrame"
+      },
+      {
+        "type": "group",
+        "id": "MencionesFrame"
+      },
+      {
+        "type": "text",
+        "id": "Textos"
+      },
+      {
+        "type": "group",
+        "id": "TextosColor"
+      },
+      {
+        "type": "text",
+        "id": "Menciones"
+      },
+      {
+        "type": "group",
+        "id": "MencionesColor"
+      }
+    ],
+    "modes": {
+      "ComponenteTextosYMenciones": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "TextosFrame",
+              "MencionesFrame"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "30.0",
+              "saturation": "1.0",
+              "value": "0.26666666666666666"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "TextosFrame",
+            "margin": {
+              "left": "32.0",
+              "right": "229.0"
+            },
+            "tap-handler": "$onPulsarTexto",
+            "is-structured": "false",
+            "children": [
+              "Textos",
+              "TextosColor"
+            ]
+          },
+          {
+            "id": "MencionesFrame",
+            "margin": {
+              "left": "140.0",
+              "right": "117.0"
+            },
+            "tap-handler": "$onPulsarMenciones",
+            "is-structured": "false",
+            "children": [
+              "Menciones",
+              "MencionesColor"
+            ]
+          },
+          {
+            "id": "Textos",
+            "margin": {
+              "left": "1.0",
+              "top": "19.0",
+              "bottom": "5.810810089111328"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "24.375000000000004",
+              "saturation": "0.8495575221238938",
+              "value": "0.8862745098039215"
+            },
+            "text-content": "Textos",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "16.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "TextosColor",
+            "margin": {
+              "left": "1.0",
+              "top": "45.0"
+            },
+            "is-structured": "false"
+          },
+          {
+            "id": "Menciones",
+            "margin": {
+              "left": "6.0",
+              "top": "16.0",
+              "right": "6.0",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Menciones",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.3125"
+          },
+          {
+            "id": "MencionesColor",
+            "margin": {
+              "top": "45.0"
+            },
+            "is-structured": "false"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onPulsarTexto": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onPulsarMenciones": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ComponenteTextosYMenciones",
+      "size": {
+        "width": 360.0,
+        "height": 51.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

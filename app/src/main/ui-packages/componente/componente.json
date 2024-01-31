@@ -1,0 +1,176 @@
+{
+  "name": "componente",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oS5GCvArJUXNdvwK6WUqEe",
+    "node": "4:45",
+    "version": "5068633676",
+    "component-id": "95be3e00c73854cb80f4a393592203a97d6cf338"
+  },
+  "default": "Componente",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "imagen"
+      },
+      {
+        "type": "vector",
+        "id": "opacidad"
+      },
+      {
+        "type": "text",
+        "id": "texto"
+      }
+    ],
+    "modes": {
+      "Componente": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "17.0",
+            "tap-handler": "$pulsar",
+            "is-structured": "false",
+            "children": [
+              "imagen",
+              "opacidad",
+              "texto"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "imagen",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "9.00000473856835"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "104.00000515580086"
+              }
+            },
+            "relative-transform": [
+              [
+                "0.9999999403953552",
+                "-1.654361027890829e-24",
+                "0.0"
+              ],
+              [
+                "1.654361027890829e-24",
+                "0.9999999403953552",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "353.0000305175781"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "339.0000305175781"
+              }
+            },
+            "image-content": "$zeus image ",
+            "scale": "cover"
+          },
+          {
+            "id": "opacidad",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "676.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "272.0"
+              }
+            },
+            "vector-content": "opacidad.svg"
+          },
+          {
+            "id": "texto",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "665.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "261.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$texto text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "0.7",
+            "typeface": "Shrikhand"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "pulsar": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "zeus image ": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "texto text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Componente",
+      "size": {
+        "width": 335.0,
+        "height": 131.0
+      },
+      "parameters": {
+        "zeus image ": "imagen.png",
+        "texto text content": "GRIEGA"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,176 @@
+{
+  "name": "componente_grande",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oS5GCvArJUXNdvwK6WUqEe",
+    "node": "4:82",
+    "version": "5068633676",
+    "component-id": "7e9b65d6b971bae85fd4e1268261dc69ec2bf67b"
+  },
+  "default": "ComponenteGrande",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "image 38"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 8"
+      },
+      {
+        "type": "text",
+        "id": "CULTURAS ANTIGUAS"
+      }
+    ],
+    "modes": {
+      "ComponenteGrande": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "17.0",
+            "tap-handler": "$pulsar",
+            "is-structured": "false",
+            "children": [
+              "image 38",
+              "Rectangle 8",
+              "CULTURAS ANTIGUAS"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "image 38",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "4.00000548362641"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "49.50000473856835"
+              }
+            },
+            "relative-transform": [
+              [
+                "0.9999999403953552",
+                "-1.654361027890829e-24",
+                "0.0"
+              ],
+              [
+                "1.654361027890829e-24",
+                "0.9999999403953552",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "328.0000305175781"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "353.0000305175781"
+              }
+            },
+            "image-content": "$imagen",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 8",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "272.0"
+              }
+            },
+            "vector-content": "rectangle_8.svg"
+          },
+          {
+            "id": "CULTURAS ANTIGUAS",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "80.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "229.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$texto",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "0.7",
+            "typeface": "Shrikhand"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "pulsar": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "imagen": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "texto": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ComponenteGrande",
+      "size": {
+        "width": 320.0,
+        "height": 254.0
+      },
+      "parameters": {
+        "imagen": "image_38.png",
+        "texto": "CULTURAS \nANTIGUAS"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

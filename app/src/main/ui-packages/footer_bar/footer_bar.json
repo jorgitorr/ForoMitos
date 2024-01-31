@@ -1,0 +1,380 @@
+{
+  "name": "footer_bar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oS5GCvArJUXNdvwK6WUqEe",
+    "node": "53:80",
+    "version": "5069434423",
+    "component-id": "eb2d2533d2064df5b1713861132e31f1e087d444"
+  },
+  "default": "FooterBar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Home"
+      },
+      {
+        "type": "group",
+        "id": "Discover"
+      },
+      {
+        "type": "group",
+        "id": "Me"
+      },
+      {
+        "type": "vector",
+        "id": "Home Solid Icon"
+      },
+      {
+        "type": "text",
+        "id": "NombreHome"
+      },
+      {
+        "type": "vector",
+        "id": "Search Icon"
+      },
+      {
+        "type": "text",
+        "id": "NombreDiscover"
+      },
+      {
+        "type": "vector",
+        "id": "Account Stroke Icon"
+      },
+      {
+        "type": "text",
+        "id": "NombreMe"
+      }
+    ],
+    "modes": {
+      "FooterBar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "29.0",
+              "top": "6.0",
+              "right": "29.0",
+              "bottom": "6.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "1.0",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.14901960784313725"
+              },
+              "blur": "0.0",
+              "offset-x": "0.0",
+              "offset-y": "-0.33000001311302185",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Home",
+              "Discover",
+              "Me"
+            ],
+            "item-spacing": "107.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "30.0",
+              "saturation": "1.0",
+              "value": "0.26666666666666666"
+            }
+          },
+          {
+            "id": "Home",
+            "tap-handler": "$onHome",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "28.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.415252685546875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Home Solid Icon",
+              "NombreHome"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Discover",
+            "opacity": "0.800000011920929",
+            "tap-handler": "$onDiscover",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.000003814697266"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.415252685546875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Search Icon",
+              "NombreDiscover"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Me",
+            "opacity": "0.800000011920929",
+            "tap-handler": "$onMe",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.2163143157959"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "32.415252685546875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Account Stroke Icon",
+              "NombreMe"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Home Solid Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.3790311813354492"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-7.163954734802246"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "23.2419376373291"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.087343215942383"
+              }
+            },
+            "vector-content": "home_solid_icon.svg"
+          },
+          {
+            "id": "NombreHome",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "11.021187782287598"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "28.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "10.372880935668945"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Home",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "10.0",
+            "letter-spacing": "0.15000000596046448",
+            "line-height": "1.2180000305175782",
+            "typeface": "Proxima Nova"
+          },
+          {
+            "id": "Search Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.2810077667236328"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-7.195194244384766"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.43798828125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.024864196777344"
+              }
+            },
+            "vector-content": "search_icon.svg"
+          },
+          {
+            "id": "NombreDiscover",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "11.021187782287598"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.000003814697266"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "10.372880935668945"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Discover",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "10.0",
+            "letter-spacing": "0.15000000596046448",
+            "line-height": "1.2180000305175782",
+            "typeface": "Proxima Nova"
+          },
+          {
+            "id": "Account Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-7.268455505371094"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.2163143157959"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.878341674804688"
+              }
+            },
+            "vector-content": "account_stroke_icon.svg"
+          },
+          {
+            "id": "NombreMe",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.3918428421020508"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "11.021187782287598"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "10.372880935668945"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Me",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "10.0",
+            "letter-spacing": "0.15000000596046448",
+            "line-height": "1.2180000305175782",
+            "typeface": "Proxima Nova"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onHome": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onDiscover": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onMe": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "FooterBar",
+      "size": {
+        "width": 358.21630859375,
+        "height": 44.415252685546875
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,171 @@
+{
+  "name": "head_bar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oS5GCvArJUXNdvwK6WUqEe",
+    "node": "7:237",
+    "version": "5068633676",
+    "component-id": "d98dc7094d8a81dae3fa85d1228c9020bf679052"
+  },
+  "default": "headBar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Mail Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "icon"
+      },
+      {
+        "type": "text",
+        "id": "headline"
+      }
+    ],
+    "modes": {
+      "headBar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Mail Stroke Icon",
+              "icon",
+              "headline"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "30.0",
+              "saturation": "1.0",
+              "value": "0.26666666666666666"
+            }
+          },
+          {
+            "id": "Mail Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "151.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "tap-handler": "$pulsarMensajes",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "vector-content": "mail_stroke_icon.svg"
+          },
+          {
+            "id": "icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-150.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "tap-handler": "$pulsarOpciones",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.0"
+              }
+            },
+            "vector-content": "icon.svg"
+          },
+          {
+            "id": "headline",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "244.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$texto",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "22.0",
+            "letter-spacing": "-0.88",
+            "line-height": "1.272727279663086",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "pulsarMensajes": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "pulsarOpciones": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "texto": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "headBar",
+      "size": {
+        "width": 360.0,
+        "height": 51.0
+      },
+      "parameters": {
+        "texto": "Culturas"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
