@@ -1,24 +1,39 @@
 package com.alopgal962.foromitos2.ui.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.AlertDialog
+import androidx.compose.material.TextButton
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.alopgal962.foromitos2.R
@@ -28,26 +43,45 @@ import com.alopgal962.foromitos2.data.Routes
 import com.alopgal962.foromitos2.footerbar.FooterBar
 import com.alopgal962.foromitos2.headbar.HeadBar
 import com.alopgal962.foromitos2.ui.theme.amarilloClaro
+import com.google.relay.compose.BoxScopeInstanceImpl.align
+import com.google.relay.compose.RowScopeInstanceImpl.align
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PaginaPrincipal(navController:NavController) {
+fun PaginaPrincipal(navController: NavController) {
+    val lista = listOf(
+        "Opciones de privacidad",
+        "Gestión de cuenta",
+        "Añadir Cuenta",
+        "Notificaciones",
+        "Cuenta",
+        "Cerrar Sesión",
+        "Info"
+    )
+    val expanded = remember { mutableStateOf(false) }
+
     Scaffold(
         topBar = {
-            HeadBar(modifier = Modifier
-                .fillMaxWidth()
-                .height(51.dp),texto = "Mitos",
-                pulsarMensajes = {navController.navigate(Routes.paginaMensajes.routes)},
-                pulsarOpciones = {navController.navigate(Routes.paginaOpciones.routes)})
+            HeadBar(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(51.dp),
+                texto = "Mitos",
+                pulsarMensajes = { navController.navigate(Routes.paginaMensajes.routes) },
+                pulsarOpciones = { expanded.value = true }
+
+            )
         },
         bottomBar = {
-            FooterBar(modifier = Modifier
-                .fillMaxWidth()
-                .height(51.dp),
-                onHome = {navController.navigate(Routes.paginaHome.routes)},
-                onDiscover = {navController.navigate(Routes.paginaDiscover.routes)},
-                onMe = {navController.navigate(Routes.paginaMe.routes)})
+            FooterBar(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(51.dp),
+                onHome = { navController.navigate(Routes.paginaHome.routes) },
+                onDiscover = { navController.navigate(Routes.paginaDiscover.routes) },
+                onMe = { navController.navigate(Routes.paginaMe.routes) }
+            )
         },
     ) { innerPadding ->
         Column(
@@ -61,31 +95,72 @@ fun PaginaPrincipal(navController:NavController) {
                     .fillMaxSize()
                     .background(color = amarilloClaro),
                 contentAlignment = Alignment.Center
-            ){
-                LazyColumn (modifier = Modifier.wrapContentSize()){
-                    item{ ComponenteGrande(modifier = Modifier
-                        .size(320.dp, 254.dp)
-                        .padding(10.dp),
-                        imagen = painterResource(id = R.drawable.jesus_grande),
-                        texto = "CULTURAS",
-                        pulsar = {navController.navigate(Routes.paginaCulturas.routes)})
+            ) {
+                LazyColumn(modifier = Modifier.wrapContentSize()) {
+                    item {
+                        ComponenteGrande(
+                            modifier = Modifier
+                                .size(320.dp, 254.dp)
+                                .padding(10.dp),
+                            imagen = painterResource(id = R.drawable.jesus_grande),
+                            texto = "CULTURAS",
+                            pulsar = { navController.navigate(Routes.paginaCulturas.routes) }
+                        )
                     }
-                    item { ComponenteGrande(modifier = Modifier
-                        .size(320.dp, 254.dp)
-                        .padding(10.dp),
-                        imagen = painterResource(id = R.drawable.jimmyhendrix), texto = "MÚSICOS",
-                        pulsar = {navController.navigate(Routes.paginaMusicos.routes)}) }
-                    item { ComponenteGrande(modifier = Modifier
-                        .size(320.dp, 254.dp)
-                        .padding(10.dp),
-                        imagen = painterResource(id = R.drawable.llorona) , texto = "LEYENDAS",
-                        pulsar = {navController.navigate(Routes.paginaLeyendas.routes)})}
+                    item {
+                        ComponenteGrande(
+                            modifier = Modifier
+                                .size(320.dp, 254.dp)
+                                .padding(10.dp),
+                            imagen = painterResource(id = R.drawable.jimmyhendrix),
+                            texto = "MÚSICOS",
+                            pulsar = { navController.navigate(Routes.paginaMusicos.routes) }
+                        )
+                    }
+                    item {
+                        ComponenteGrande(
+                            modifier = Modifier
+                                .size(320.dp, 254.dp)
+                                .padding(10.dp),
+                            imagen = painterResource(id = R.drawable.llorona),
+                            texto = "LEYENDAS",
+                            pulsar = { navController.navigate(Routes.paginaLeyendas.routes) }
+                        )
+                    }
                 }
             }
-
         }
     }
+    //menu de opciones
+    if (expanded.value) {
+        AlertDialog(modifier = Modifier
+            .width(500.dp)
+            .height(300.dp),
+            onDismissRequest = { expanded.value = false },
+            buttons = {
+                lista.forEach { option ->
+                    TextButton(
+                        onClick = {
+                            println("Opción seleccionada: $option")
+                            expanded.value = false
+                        }
+                    ) {
+                        Text(text = option)
+                        if (option == "Cerrar sesion") {
+                            navController.navigate(Routes.inicioSesion.routes)
+                        }
+                    }
+                }
+            }
+        )
+
+    }
+
+
 }
+
+
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
