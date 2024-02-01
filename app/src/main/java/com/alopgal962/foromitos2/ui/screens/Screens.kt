@@ -17,6 +17,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.alopgal962.foromitos2.R
@@ -336,7 +338,7 @@ fun PaginaCulturasAntiguas(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.zeus),
                             textoTextContent = "GRIEGA"
@@ -345,7 +347,7 @@ fun PaginaCulturasAntiguas(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.egipto),
                             textoTextContent = "EGIPCIA"
@@ -354,7 +356,7 @@ fun PaginaCulturasAntiguas(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.japon),
                             textoTextContent = "JAPONESA"
@@ -363,7 +365,7 @@ fun PaginaCulturasAntiguas(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.nordica),
                             textoTextContent = "NORDICA"
@@ -412,7 +414,7 @@ fun PaginaMusicos(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.jimmyhendrix),
                             textoTextContent = "JIMMY\nHENDRIX"
@@ -421,7 +423,7 @@ fun PaginaMusicos(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.linkin_park),
                             textoTextContent = "LINKIN\nPARK"
@@ -430,7 +432,7 @@ fun PaginaMusicos(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.michael_jackson),
                             textoTextContent = "MICHAEL\nJACKSON"
@@ -439,7 +441,7 @@ fun PaginaMusicos(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.freedy_mercury),
                             textoTextContent = "FREEDY\nMERCURY"
@@ -448,7 +450,7 @@ fun PaginaMusicos(navController: NavController) {
                     item {
                         Componente(
                             modifier = Modifier
-                                .size(335.dp, 131.dp)
+                                .size(320.dp, 130.dp)
                                 .padding(5.dp),
                             zeusImage = painterResource(id = R.drawable.the_beatles),
                             textoTextContent = "THE\nBEATLES"
@@ -495,6 +497,90 @@ fun PaginaInicioSesion(navController: NavController) {
             ) {
 
 
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PaginaLeyendas(navController: NavController){
+    Scaffold(
+        topBar = {
+            HeadBar(modifier = Modifier
+                .fillMaxWidth()
+                .height(51.dp),texto = "Inicio de Sesion",
+                pulsarMensajes = {navController.navigate(Routes.paginaMensajes.routes)},
+                pulsarOpciones = {navController.navigate(Routes.paginaOpciones.routes)})
+        },
+        bottomBar = {
+            FooterBar(modifier = Modifier
+                .fillMaxWidth()
+                .height(51.dp),
+                onHome = {navController.navigate(Routes.paginaPrincipal.routes)},
+                onDiscover = {navController.navigate(Routes.paginaDiscover.routes)},
+                onMe = {navController.navigate(Routes.paginaMe.routes)})
+        },
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .padding(innerPadding),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(color = amarilloClaro),
+                contentAlignment = Alignment.Center
+            ) {
+                LazyColumn(modifier = Modifier.wrapContentSize()) {
+                    item {
+                        Componente(
+                            modifier = Modifier
+                                .size(320.dp, 130.dp)
+                                .padding(5.dp),
+                            zeusImage = painterResource(id = R.drawable.jimmyhendrix),
+                            textoTextContent = "LLORONA"
+                        )
+                    }
+                    item {
+                        Componente(
+                            modifier = Modifier
+                                .size(320.dp, 130.dp)
+                                .padding(5.dp),
+                            zeusImage = painterResource(id = R.drawable.linkin_park),
+                            textoTextContent = "HOMBRE\nLOBO"
+                        )
+                    }
+                    item {
+                        Componente(
+                            modifier = Modifier
+                                .size(320.dp, 130.dp)
+                                .padding(5.dp),
+                            zeusImage = painterResource(id = R.drawable.michael_jackson),
+                            textoTextContent = "DRACULA"
+                        )
+                    }
+                    item {
+                        Componente(
+                            modifier = Modifier
+                                .size(320.dp, 130.dp)
+                                .padding(5.dp),
+                            zeusImage = painterResource(id = R.drawable.freedy_mercury),
+                            textoTextContent = "EL CHUPACABRAS"
+                        )
+                    }
+                    item {
+                        Componente(
+                            modifier = Modifier
+                                .size(320.dp, 130.dp)
+                                .padding(5.dp),
+                            zeusImage = painterResource(id = R.drawable.the_beatles),
+                            textoTextContent = "EL HILO ROJO"
+                        )
+                    }
+                }
             }
         }
     }

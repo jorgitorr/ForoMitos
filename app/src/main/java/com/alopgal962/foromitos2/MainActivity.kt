@@ -17,6 +17,7 @@ import com.alopgal962.foromitos2.data.Routes
 import com.alopgal962.foromitos2.ui.screens.PaginaCulturas
 import com.alopgal962.foromitos2.ui.screens.PaginaCulturasAntiguas
 import com.alopgal962.foromitos2.ui.screens.PaginaInicioSesion
+import com.alopgal962.foromitos2.ui.screens.PaginaLeyendas
 import com.alopgal962.foromitos2.ui.screens.PaginaMusicos
 import com.alopgal962.foromitos2.ui.screens.PaginaPrincipal
 import com.alopgal962.foromitos2.ui.screens.paginaDiscover
@@ -46,6 +47,7 @@ class MainActivity : ComponentActivity() {
                         composable(Routes.paginaMensajes.routes){ paginaMensajes(navController = navController)}
                         composable(Routes.paginaOpciones.routes){ paginaOpciones(navController = navController)}
                         composable(Routes.paginaDiscover.routes){ paginaDiscover(navController = navController)}
+                        composable(Routes.paginaLeyendas.routes){ PaginaLeyendas(navController = navController)}
                     }
                 }
             }

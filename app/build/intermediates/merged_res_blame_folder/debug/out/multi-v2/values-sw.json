@@ -4,24 +4,7 @@
             "outputFile": "com.alopgal962.foromitos2.app-mergeDebugResources-49:/values-sw/values-sw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\usuariot\\.gradle\\caches\\transforms-3\\9cc0b765caf38179c734d10b72e03aed\\transformed\\material3-1.0.0\\res\\values-sw\\values-sw.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,133,209",
-                        "endColumns": "77,75,78",
-                        "endOffsets": "128,204,283"
-                    },
-                    "to": {
-                        "startLines": "11,14,16",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1003,1283,1445",
-                        "endColumns": "77,75,78",
-                        "endOffsets": "1076,1354,1519"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\usuariot\\.gradle\\caches\\transforms-3\\2f91f78aad29bc09bed2ae8766f472de\\transformed\\ui-release\\res\\values-sw\\values-sw.xml",
+                    "source": "C:\\Users\\jorge\\.gradle\\caches\\transforms-3\\2f91f78aad29bc09bed2ae8766f472de\\transformed\\ui-release\\res\\values-sw\\values-sw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\usuariot\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-sw\\values-sw.xml",
+                    "source": "C:\\Users\\jorge\\.gradle\\caches\\transforms-3\\9cc0b765caf38179c734d10b72e03aed\\transformed\\material3-1.0.0\\res\\values-sw\\values-sw.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,133,209",
+                        "endColumns": "77,75,78",
+                        "endOffsets": "128,204,283"
+                    },
+                    "to": {
+                        "startLines": "11,14,16",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1003,1283,1445",
+                        "endColumns": "77,75,78",
+                        "endOffsets": "1076,1354,1519"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jorge\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-sw\\values-sw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
