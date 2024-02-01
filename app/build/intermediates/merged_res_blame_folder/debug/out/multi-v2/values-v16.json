@@ -4,7 +4,7 @@
             "outputFile": "com.alopgal962.foromitos2.app-mergeDebugResources-49:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jorge\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\usuariot\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
