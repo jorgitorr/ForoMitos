@@ -37,6 +37,7 @@ drawable linkin_park
 drawable llorona
 drawable mail_stroke_icon
 drawable michael_jackson
+drawable michael_jackson_grande
 drawable nordica
 drawable osiris
 drawable poseidon

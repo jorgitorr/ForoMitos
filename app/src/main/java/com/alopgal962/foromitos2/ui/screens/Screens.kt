@@ -378,6 +378,10 @@ fun PaginaCulturasAntiguas(navController: NavController) {
     }
 }
 
+
+
+//funcion que te lleva a mitos griegos
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PaginaMusicos(navController: NavController) {
@@ -434,7 +438,7 @@ fun PaginaMusicos(navController: NavController) {
                             modifier = Modifier
                                 .size(320.dp, 130.dp)
                                 .padding(5.dp),
-                            zeusImage = painterResource(id = R.drawable.michael_jackson),
+                            zeusImage = painterResource(id = R.drawable.michael_jackson_grande),
                             textoTextContent = "MICHAEL\nJACKSON"
                         )
                     }

@@ -110,6 +110,7 @@ int drawable linkin_park 0x7f040021
 int drawable llorona 0x7f040022
 int drawable mail_stroke_icon 0x7f040023
 int drawable michael_jackson 0x7f040024
+int drawable michael_jackson_grande 0x7f040037
 int drawable nordica 0x7f040025
 int drawable notification_action_background 0x7f040026
 int drawable notification_bg 0x7f040027
